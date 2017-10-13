@@ -1,0 +1,78 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Learning">
+
+
+
+<test name="selenium test">
+    <classes>
+        <class name="dd_core.testCore" ></class>  
+    </classes>
+</test>
+ <!--  
+<test name="google webpage verificatin">
+
+    <classes>
+        <class name="dd_tests.TC_01_verifyGoogle" ></class>  
+    </classes>
+</test> 
+
+
+
+<test name="google Apps verificatin">
+    <classes>
+        <class name="dd_tests.TC_02_verifyGoogleApp" ></class>  
+    </classes>
+</test>
+  
+
+<test name="google Apps Launching">
+
+    <classes>
+        <class name="dd_tests.TC_03_verifyGoogleAppLaunch" ></class>  
+    </classes>
+  
+</test>
+  
+
+
+ 
+<test name=" verify Open_Close_Browser">
+    <classes>
+        <class name="dd_tests.TC_06_Open_close_Browser" ></class>  
+    </classes>
+</test> 
+
+
+<test name=" verify Able To Login InTo Gmail ">
+    <classes>
+        <class name="dd_tests.TC_09_verifyAbleToLoginInGmail" ></class>  
+    </classes>
+</test>
+
+
+  -->
+<test name=" verify SignIn IN allApps">
+    <classes>
+        <class name="dd_tests.TC_04_SignIn_in_allApps" ></class>  
+    </classes>
+</test>
+<!--   
+<test name=" verify Language">
+    <classes>
+        <class name="dd_tests.TC_05_verifyLanguage" ></class>  
+    </classes>
+</test>
+
+
+<test name=" verify Link Contain Text">
+    <classes>
+        <class name="dd_tests.TC_07_VerifySearchOpeation" ></class>  
+    </classes>
+</test>
+ -->
+
+
+
+ 
+
+</suite>

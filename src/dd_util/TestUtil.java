@@ -69,18 +69,6 @@ public class TestUtil extends testCore{
 		
 	}
 
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 	public static void captureScreenshot() 
 	{
 		

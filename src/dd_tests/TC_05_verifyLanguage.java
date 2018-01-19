@@ -22,7 +22,7 @@ public class TC_05_verifyLanguage extends testCore{
 		if(! TestUtil.isExecutable("TC_05_verifyLanguage")){
 			throw new SkipException("Skipping test as runmode set to No.,,,,,,,,");
 		}
-		setup("Firefox");
+		setup("chrome");
 	}
 	
 	@Test
@@ -30,22 +30,21 @@ public class TC_05_verifyLanguage extends testCore{
 	{
 		System.out.println("5th Test case");
 		driver.manage().timeouts().implicitlyWait(30L,TimeUnit.SECONDS);
-		clicked(driver.findElement(By.xpath(object.getProperty("Hindi"))));
-		System.out.println(driver.findElement(By.xpath(object.getProperty("HindiSearchButton"))).getAttribute("value"));
-		System.out.println(driver.findElement(By.xpath(object.getProperty("HindiLuckyButton"))).getAttribute("value"));
-		
 		
 		
 		WebElement allLanguage = driver.findElement(By.xpath(object.getProperty("LanguageList")));
-		
 		List<WebElement> lang = allLanguage.findElements(By.tagName("a"));
-		System.out.println(lang.size());
+		System.out.println(lang.size());	
+	
 		
-		for(int i=0;i<lang.size();i++)
-		{
-			System.out.println(lang.get(i).getText());
-		}
 		
+		clicked(driver.findElement(By.xpath(object.getProperty("Hindi"))));
+        /*
+		WebElement Block = driver.findElement(By.xpath(object.getProperty("LanguageList")));
+		List<WebElement> links = Block.findElements(By.tagName("a"));
+		System.out.println(links.size());	
+		*/
+			
 	}	 
 
 	@AfterTest

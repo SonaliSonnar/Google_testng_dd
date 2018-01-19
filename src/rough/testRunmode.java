@@ -40,3 +40,26 @@ public class testRunmode extends testCore {
 	}
 
 }
+
+
+
+/*
+String NumberOfMails = driver.findElement(By.xpath(object.getProperty("Inbox"))).getText();
+int ReceivedMail = Integer.parseInt(NumberOfMails.replaceAll("[^0-9]+",""));
+System.out.println("Total Number of mails received is "+ReceivedMail);
+Thread.sleep(3000L);
+
+
+int count= ReceivedMail/50;
+int i=0;
+System.out.println(count);
+do{
+		String range=(driver.findElement(By.xpath(object.getProperty("range"))).getText());
+		System.out.println("Email upto "+range);
+		clicked(driver.findElement(By.xpath(object.getProperty("older"))));
+		Thread.sleep(1000L);
+		i++;
+  }while(i<=count);
+
+System.out.println("range is near to reaceived mail(i.e):"+(driver.findElement(By.xpath(object.getProperty("range"))).getText()));
+}*/

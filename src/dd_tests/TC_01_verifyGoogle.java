@@ -2,6 +2,7 @@ package dd_tests;
 
 import java.util.concurrent.TimeUnit;
 
+
 import org.openqa.selenium.By;
 import org.testng.SkipException;
 import org.testng.annotations.AfterTest;
@@ -22,6 +23,8 @@ public class TC_01_verifyGoogle extends testCore{
 			setup("chrome");
 		
 	}
+	
+	
 	@Test
 	public void LaunchGoogleWebPage() throws InterruptedException
 	{
@@ -48,11 +51,12 @@ public class TC_01_verifyGoogle extends testCore{
 			 	
 	}catch(Throwable t)
 		{
+		t.printStackTrace();
 		//TestUtil.captureScreenshot();
 		}
 	}	
 @AfterTest
-public void teardown()
+public void closebrowser()
 {
 	driver.quit();
 	

@@ -16,7 +16,7 @@ import dd_util.TestUtil;
 public class TC_03_verifyGoogleAppLaunch extends testCore {
 	
 	
-	@BeforeSuite
+	@BeforeTest
 	public void isSkip() throws Exception
 	{
 		if(! TestUtil.isExecutable("TC_03_verifyGoogleAppLaunch"))
@@ -39,7 +39,7 @@ Enabled(object.getProperty("GoogleApps"));
 clicked(driver.findElement(By.xpath(object.getProperty("GoogleApps"))));	
 	
 
-//MyAccountOption Option is present or not
+//MyAccount app launch successfully or not
 System.out.println("MyAccountOption ");
 isElementPresent(object.getProperty("MyAccountOption"));
 System.out.println("MyAccountOption ");

@@ -20,7 +20,7 @@ public class TC_04_SignIn_in_allApps extends testCore{
 		if(! TestUtil.isExecutable("TC_04_SignIn_in_allApps")){
 			throw new SkipException("Skipping test as runmode set to No.,,,,,,,,");
 		}
-		setup("Firefox");
+		setup("chrome");
 	}
 	
 	@Test(dataProvider="getdata")
@@ -37,8 +37,8 @@ public class TC_04_SignIn_in_allApps extends testCore{
 		clicked(driver.findElement(By.xpath(object.getProperty("passwordNext"))));
 		
 		System.out.println("playStore App WebPage");
-		clicked(driver.findElement(By.xpath(object.getProperty("GoogleApps"))));
-		clicked(driver.findElement(By.xpath(object.getProperty("PlayStoreOption"))));
+		(driver.findElement(By.xpath(object.getProperty("GoogleApps")))).click();
+		(driver.findElement(By.xpath(object.getProperty("PlayStoreOption")))).click();
 		ActiveMember();
 		
 		System.out.println("Gmail App WebPage");
